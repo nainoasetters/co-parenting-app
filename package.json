@@ -12,6 +12,9 @@
     "react-scripts": "4.0.3"
   },
   "devDependencies": {},
+  "@babel/core": "^7.16.0",
+  "@babel/preset-env": "^7.16.0",
+  "@babel/preset-react": "^7.16.0"
   "author": "",
   "license": "ISC"
 }
