@@ -9,7 +9,7 @@
   "dependencies": {
   "react":"^17.0.2",
     "reac-dom": "^17.0.2",
-    "react-scripts":^"5.4.0.3
+    "react-scripts":^"55.0.13
   },
   "devDependencies": {},
   "@babel/ore": "^7.16.7.16.0.3
