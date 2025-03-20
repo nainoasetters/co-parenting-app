@@ -1,20 +1,18 @@
 {
   "name": "co-parenting-app",
   "version": "1.0.0",
-"engines": {
-  "node": "14.x"
-},
+  "engines": {
+    "node": "14.x"
+  },
   "description": "Co-Parenting app integrating Shared Calendar, Secure Messaging, Expense Tracking & Payments, and Document Storage.",
   "main": "index.js",
   "scripts": {
     "build": "next build"
   },
-  "dependencies":  {
-  "react-scripts": "4.0.3",
+  "dependencies": {
+    "react-scripts": "4.0.3",
     "react": "^17.0.2",
-    "react-dom": "^17^17.0.2,
-  
+    "react-dom": "^17.0.2",
     "next": "^11.0.1"
-}
   }
-
+}
