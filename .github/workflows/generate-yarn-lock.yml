@@ -1,0 +1,27 @@
+name: Generate yarn.lock
+
+on:
+  workflow_dispatch:  # Allows you to run manually from the Actions tab
+
+jobs:
+  generate-lockfile:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+          cache: 'yarn'
+          
+      - name: Install dependencies and generate lockfile
+        run: yarn install
+        
+      - name: Commit and push if changed
+        run: |
+          git config --global user.name 'GitHub Action'
+          git config --global user.email 'action@github.com'
+          git add yarn.lock
+          git diff --quiet && git diff --staged --quiet || git commit -m "Add automatically generated yarn.lock"
+          git push
