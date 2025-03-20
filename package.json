@@ -2,10 +2,10 @@
   "name": "co-parenting-app",
   "version": "1.0.0",
   "engines": {
-    "node": "14.x"
+    "node": 16.x
   },
   "description": "Co-Parenting app integrating Shared Calendar, Secure Messaging, Expense Tracking & Payments, and Document Storage.",
-  "main": "index.js",
+  "main": "index.js",16
   "scripts": {
     "build": "next build"
   },
